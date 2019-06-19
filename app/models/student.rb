@@ -15,6 +15,6 @@ class Student < ActiveRecord::Base
   has_many :classrooms, through: :classroom_students
 
   def search
-    Student.map {|s| s.name}
+    self.map {|s| s.name}
   end
 end
