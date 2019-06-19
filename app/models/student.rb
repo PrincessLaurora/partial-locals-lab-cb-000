@@ -16,5 +16,5 @@ class Student < ActiveRecord::Base
 
   def search
     Student.map {|s| s.name}
-  end  
+  end
 end
