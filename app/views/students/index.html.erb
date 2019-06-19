@@ -1,3 +1,5 @@
-<%=@students.search(@student.name)%>
+<h1>Search by name</h1>
+
+<%=@students.each do |student|%>
 
 <%= render partial: 'student', locals: {student: @student} %>
